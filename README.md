@@ -1,6 +1,5 @@
-# win-firewall-batch-block
-Windows Firewall Batch Block outbound for all exe files under given path 
-This PowerShell script blocks outbound internet connections for all executable files (`.exe`) found in a specified folder and its subfolders (recursively). It allows users to specify a prefix for the firewall rule names, making it easy to identify the rules in the Windows Firewall or by default, uses specified folder name.
+# Win Firewall Batch Block Outbund
+This PowerShell script blocks outbound internet connections for all executable files (*.exe) found in a specified folder and its subfolders (recursively). It allows users to specify a prefix for the firewall rule names, making it easy to identify the rules in the Windows Firewall or by default, uses specified folder name.
 
 ## Features
 
