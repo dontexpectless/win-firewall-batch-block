@@ -29,21 +29,18 @@ This PowerShell script blocks outbound internet connections for all executable f
 
 ## Example
 
-If you want to block all Adobe software, when asked,  put the (default) Adobe Installation path:
-- C:\Program Files\Adobe
+If you want to block all Adobe software, when asked,  put the (default) Adobe Installation path ``` C:\Program Files\Adobe ```
 
 Next, will ask for a prefix to be used in all new firwall rules. For this example, we input 'Adobe Block All'. If we pulse enter, will use "Adobe" as prefix due folder name of the path we introduced 'C:\Program Files\Adobe'
 
-The script will found thousands of executables in subfolders (in my case, 39 with photoshop 2024 and Illustrator 20024 installed).
+The script will found thousands of executables in subfolders (in my case, 39 with photoshop 2024 and Illustrator 20024 installed). Two random examples:
  - C:\Program Files\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe
  - C:\Program Files\Adobe\Adobe Photoshop 2024\Photoshop.exe
 
-The final rule names with prefix input 'Adobe Block All':
+The final rule names **with prefix** input 'Adobe Block All':
 - Adobe Block All - CCXProcess.exe
 - Adobe Block All - Photoshop.exe
 
-The final rule names wihtout prefix input
+The final rule names **wihtout prefix** input:
 - Adobe - CCXProcess.exe
 - Adobe - Photoshop.exe
-
- - 
