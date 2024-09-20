@@ -12,15 +12,19 @@ This PowerShell script blocks outbound internet connections for all executable f
 
 - Windows 10 or later
 - PowerShell (running as Administrator)
+- Open Windows Firewall in advanced mode to view (new) rules (Open Windows Run with shortcut ```cmd+r``` and put ```wf.msc```.
 
 ## Usage
 
 1. Clone this repository or download the script file.
-
 2. Open PowerShell as Administrator.
-3. Go to the folder where you saved the script file
-4. Execute the script
-    ```powershell
+3. Go to the folder where you saved the script file, by default:
+    ```
+    cd Downloads
+    ```
+%USERPROFILE%\Downloads
+5. Execute the script
+    ```
     .\win-firewall-batch-block.ps1
     ```
 6. When prompted, enter the full path to the folder (or drop the folder to the Powershell window)
@@ -32,7 +36,7 @@ If you want to block all Adobe software, when asked,  put the (default) Adobe In
 
 Next, will ask for a prefix to be used in all new firwall rules. For this example, we input 'Adobe Block All'. If we pulse enter, will use "Adobe" as prefix due folder name of the path we introduced 'C:\Program Files\Adobe'
 
-The script will found thousands of executables in subfolders (in my case, 39 with photoshop 2024 and Illustrator 20024 installed). Two random examples:
+The script will found thousands of executables in Adobe folders (in my case, 39 with photoshop 2024 and Illustrator 20024 installed). Two random examples:
  - C:\Program Files\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe
  - C:\Program Files\Adobe\Adobe Photoshop 2024\Photoshop.exe
 
